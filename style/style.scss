@@ -7,6 +7,7 @@
   font-size: 16px;
   color: #111;
   font-weight: 500;
+  font-size: 0;
   body {
     font-family: "Open Sans", sans-serif;
     h1,
@@ -17,6 +18,20 @@
     li {
       text-decoration: none;
       list-style: none;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a,
+    p,
+    span,
+    input,
+    button {
+      font-size: 16px;
+      color: #111;
     }
     .lpg-container {
       max-width: 1200px;
@@ -29,32 +44,49 @@
         justify-content: space-between;
         align-items: center;
         .lpg-b-logo {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-          img {
-            width: 45px;
-            height: 45px;
-          }
-          .lpg-span-name {
-            font-weight: 700;
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            img {
+              width: 45px;
+              height: 45px;
+            }
+            .lpg-span-name {
+              font-weight: 700;
+            }
           }
         }
         .lpg-b-nav {
           ul {
             li {
-              display: inline-block;
+              display: inline;
+              margin-left: 10px;
+              &:first-child {
+                margin-left: unset;
+              }
               a {
-                padding: 15px;
+                padding: 10px;
                 font-weight: 700;
-              }
-              &::after {
-                content: "|";
-              }
-              &:last-child {
-                &::after {
-                  content: "";
+                &.lpg-login {
+                  border: 1px solid #111;
+                  border-radius: 50px;
+                  background: #faf16e;
+                  display: inline-block;
+                  &:hover {
+                    transform: translateY(-10%);
+                    box-shadow: 0px 5px 0px 0px #111;
+                  }
+                }
+                &.lpg-register {
+                  border: 1px solid #111;
+                  border-radius: 50px;
+                  display: inline-block;
+                  &:hover {
+                    transform: translateY(-10%);
+                    box-shadow: 0px 5px 0px 0px #111;
+                  }
                 }
               }
             }
@@ -79,6 +111,316 @@
         }
       }
     }
+    footer {
+      &.lpg-footer {
+        background: #111;
+        width: 100%;
+        padding: 40px 0;
+        .lpg-container {
+          display: flex;
+          justify-content: space-between;
+          .lpg-info-1 {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            align-items: center;
+            img {
+              width: 150px;
+              height: 150px;
+            }
+            span {
+              color: #fff;
+              margin-bottom: 20px;
+            }
+            p {
+              color: #fff;
+            }
+          }
+          .lpg-info-2 {
+            width: 18%;
+            h2 {
+              margin-bottom: 20px;
+              color: #fff;
+              font-size: 20px;
+              font-weight: 700;
+              text-transform: initial;
+              &::after {
+                content: "";
+                width: 40%;
+                height: 4px;
+                background-color: #faf16e;
+                display: block;
+              }
+            }
+            .lpg-b-nav {
+              ul {
+                li {
+                  margin-bottom: 10px;
+                  a {
+                    color: #fff;
+                    font-weight: 500;
+                    &:hover {
+                      color: #faf16e;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .lpg-info-3 {
+            width: 18%;
+            h2 {
+              color: #fff;
+              font-size: 20px;
+              font-weight: 700;
+              text-transform: initial;
+              margin-bottom: 20px;
+              &::after {
+                content: "";
+                width: 50px;
+                height: 4px;
+                background-color: #faf16e;
+                display: block;
+              }
+            }
+          }
+          .lpg-info-4 {
+            width: 25%;
+            h2 {
+              color: #fff;
+              font-size: 20px;
+              font-weight: 700;
+              text-transform: initial;
+              margin-bottom: 20px;
+              &::after {
+                content: "";
+                width: 50px;
+                height: 4px;
+                background-color: #faf16e;
+                display: block;
+              }
+            }
+            .lpg-form {
+              .lpg-form-group {
+                margin-bottom: 20px;
+                &:last-child {
+                  margin-bottom: unset;
+                }
+                input {
+                  width: 100%;
+                  height: 40px;
+                  color: #fff;
+                  font-size: 16px;
+                  outline: 0;
+                  padding: 5px 10px;
+                  border: 2px solid #957122;
+                  background: none;
+                  &::placeholder {
+                    color: #fff;
+                  }
+                }
+                button {
+                  width: 50%;
+                  height: 50px;
+                  color: #fff;
+                  outline: 0;
+                  cursor: pointer;
+                  border: none;
+                  background-image: linear-gradient(
+                    to right bottom,
+                    #faf16e,
+                    #e2cf59,
+                    #caae45,
+                    #b08f33,
+                    #957122
+                  );
+                  font-weight: 700;
+                  border-radius: 0 20px 0 20px;
+                  display: block;
+                  transition: 0.5s ease-out;
+                  &:hover {
+                    transform: translateY(-5%);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    //introduce
+    .lpg-s-banner-introduce {
+      width: 100%;
+      height: 700px;
+      background: url(../../images/world-map.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      .lpg-container {
+        position: relative;
+        height: 100%;
+        .lpg-b-center {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          position: relative;
+          transition: 5s ease-in-out;
+          .lpg-big-logo {
+            width: 300px;
+            height: 300px;
+            box-shadow: 0px 0px 0px 2px #111;
+            border-radius: 50%;
+          }
+          .lpg-b-hst-1 {
+            background: url(../public/GIAO-DUC.png);
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            outline: 0;
+            border: 0;
+            cursor: pointer;
+            border-radius: 50%;
+            position: absolute;
+            top: 1%;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: 0.5s ease-in-out;
+            opacity: 0;
+          }
+          .lpg-b-hst-2 {
+            opacity: 0;
+            transition: 0.5s ease-in-out;
+            background: url(../public/ECOSYSTEM.png);
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            outline: 0;
+            border: 0;
+            cursor: pointer;
+            border-radius: 50%;
+            position: absolute;
+            top: 10%;
+            right: 23%;
+            transform: translateX(-50%);
+          }
+          .lpg-b-hst-3 {
+            opacity: 0;
+            transition: 0.5s ease-in-out;
+            background: url(../public/TAN-TAM.png);
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            outline: 0;
+            border: 0;
+            cursor: pointer;
+            border-radius: 50%;
+            position: absolute;
+            top: 33%;
+            right: 15%;
+            transform: translateX(-50%);
+          }
+          .lpg-b-hst-4 {
+            opacity: 0;
+            transition: 0.5s ease-in-out;
+            background: url(../public/TON-VINH.png);
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            outline: 0;
+            border: 0;
+            cursor: pointer;
+            border-radius: 50%;
+            position: absolute;
+            top: 59%;
+            right: 18%;
+            transform: translateX(-50%);
+          }
+          .lpg-b-hst-5 {
+            opacity: 0;
+            transition: 0.5s ease-in-out;
+            background: url(../public/DE-DANG.png);
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            outline: 0;
+            border: 0;
+            cursor: pointer;
+            border-radius: 50%;
+            position: absolute;
+            top: 76%;
+            right: 30%;
+            transform: translateX(-50%);
+          }
+          .lpg-b-hst-6 {
+            opacity: 0;
+            transition: 0.5s ease-in-out;
+            background: url(../public/BĐ.png);
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            outline: 0;
+            border: 0;
+            cursor: pointer;
+            border-radius: 50%;
+            position: absolute;
+            top: 76%;
+            left: 30%;
+            transform: translateX(50%);
+          }
+          .lpg-b-hst-7 {
+            opacity: 0;
+            transition: 0.5s ease-in-out;
+            background: url(../public/KINH-TE.png);
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            outline: 0;
+            border: 0;
+            cursor: pointer;
+            border-radius: 50%;
+            position: absolute;
+            top: 59%;
+            left: 18%;
+            transform: translateX(50%);
+          }
+          .lpg-b-hst-8 {
+            opacity: 0;
+            transition: 0.5s ease-in-out;
+            background: url(../public/HIEU-QUA.png);
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            outline: 0;
+            border: 0;
+            cursor: pointer;
+            border-radius: 50%;
+            position: absolute;
+            top: 33%;
+            left: 15%;
+            transform: translateX(50%);
+          }
+          .lpg-b-hst-9 {
+            transition: 0.5s ease-in-out;
+            opacity: 0;
+            background: url(../public/LAN-TOA.png);
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            outline: 0;
+            border: 0;
+            cursor: pointer;
+            border-radius: 50%;
+            position: absolute;
+            top: 10%;
+            left: 23%;
+            transform: translateX(50%);
+          }
+        }
+      }
+    }
+    // end introduce
   }
 }
 // slide home page
@@ -97,11 +439,9 @@
           border-top: 3px solid #fff;
           border-left: 3px solid #fff;
           transform: rotate(-45deg);
-          
         }
-        
       }
-      &.slick-next{
+      &.slick-next {
         right: 30px;
         cursor: pointer;
         z-index: 99;
@@ -112,9 +452,9 @@
           height: 25px;
           border-top: 3px solid #fff;
           border-left: 3px solid #fff;
-          transform: rotate(135deg); 
+          transform: rotate(135deg);
         }
-    }
+      }
     }
   }
 }

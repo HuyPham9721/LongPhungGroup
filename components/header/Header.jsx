@@ -5,21 +5,24 @@ const Header = () => {
     <>
       <header className="lpg-container lpg-hdr">
         <div className="lpg-b-logo">
-          <Image
-            src="/logo-lpg.png"
-            width={500}
-            height={500}
-            alt="Picture of the author"
-          />
-          <span className="lpg-span-name">Long Phụng Group</span>
+          <Link href="/">
+            {" "}
+            <Image
+              src="/logo-lpg.png"
+              width={500}
+              height={500}
+              alt="Picture of the author"
+            />
+            <span className="lpg-span-name">Long Phụng Group</span>
+          </Link>
         </div>
         <nav className="lpg-b-nav">
           <ul>
             <li>
-              <Link href="">Trang Chủ</Link>
+              <Link href="/">Trang Chủ</Link>
             </li>
             <li>
-              <Link href="">Giới Thiệu</Link>
+              <Link href="/gioithieu">Giới Thiệu</Link>
             </li>
             <li>
               <Link href="">Sản Phẩm</Link>
@@ -31,10 +34,14 @@ const Header = () => {
               <Link href="">Liên Hệ</Link>
             </li>
             <li>
-              <Link href="">Đăng Ký</Link>
+              <Link href="" className="lpg-register">
+                Đăng Ký
+              </Link>
             </li>
             <li>
-              <Link href="">Đăng Nhập</Link>
+              <Link href="" className="lpg-login">
+                Đăng Nhập
+              </Link>
             </li>
           </ul>
         </nav>
