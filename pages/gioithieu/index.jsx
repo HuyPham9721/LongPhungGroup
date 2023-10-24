@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { DefaultLayout } from "../../layouts";
 import Image from "next/image";
-const introduce = () => {
+const Introduce = () => {
   useEffect(() => {
     const btn1 = document.querySelector(".lpg-b-hst-1");
     const btn2 = document.querySelector(".lpg-b-hst-2");
@@ -92,4 +92,4 @@ const introduce = () => {
     </>
   );
 };
-export default introduce;
+export default Introduce;
