@@ -230,7 +230,7 @@
 * body .lpg-s-banner-introduce {
   width: 100%;
   height: 700px;
-  background: url("../../images/world-map.png");
+  background: url("../public/world-map.png");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -254,7 +254,7 @@
   border-radius: 50%;
 }
 * body .lpg-s-banner-introduce .lpg-container .lpg-b-center .lpg-b-hst-1 {
-  background: url("../public/GIAO-DUC.png");
+  background: url(../public/GIAO-DUC.png);
   width: 150px;
   height: 150px;
   background-size: cover;
@@ -272,7 +272,7 @@
 * body .lpg-s-banner-introduce .lpg-container .lpg-b-center .lpg-b-hst-2 {
   opacity: 0;
   transition: 0.5s ease-in-out;
-  background: url("../public/ECOSYSTEM.png");
+  background: url(../public/ECOSYSTEM.png);
   width: 150px;
   height: 150px;
   background-size: cover;
@@ -288,7 +288,7 @@
 * body .lpg-s-banner-introduce .lpg-container .lpg-b-center .lpg-b-hst-3 {
   opacity: 0;
   transition: 0.5s ease-in-out;
-  background: url("../public/TAN-TAM.png");
+  background: url(../public/TAN-TAM.png);
   width: 150px;
   height: 150px;
   background-size: cover;
@@ -304,7 +304,7 @@
 * body .lpg-s-banner-introduce .lpg-container .lpg-b-center .lpg-b-hst-4 {
   opacity: 0;
   transition: 0.5s ease-in-out;
-  background: url("../public/TON-VINH.png");
+  background: url(../public/TON-VINH.png);
   width: 150px;
   height: 150px;
   background-size: cover;
@@ -320,7 +320,7 @@
 * body .lpg-s-banner-introduce .lpg-container .lpg-b-center .lpg-b-hst-5 {
   opacity: 0;
   transition: 0.5s ease-in-out;
-  background: url("../public/DE-DANG.png");
+  background: url(../public/DE-DANG.png);
   width: 150px;
   height: 150px;
   background-size: cover;
@@ -336,7 +336,7 @@
 * body .lpg-s-banner-introduce .lpg-container .lpg-b-center .lpg-b-hst-6 {
   opacity: 0;
   transition: 0.5s ease-in-out;
-  background: url("../public/BĐ.png");
+  background: url(../public/BĐ.png);
   width: 150px;
   height: 150px;
   background-size: cover;
@@ -352,7 +352,7 @@
 * body .lpg-s-banner-introduce .lpg-container .lpg-b-center .lpg-b-hst-7 {
   opacity: 0;
   transition: 0.5s ease-in-out;
-  background: url("../public/KINH-TE.png");
+  background: url(../public/KINH-TE.png);
   width: 150px;
   height: 150px;
   background-size: cover;
@@ -368,7 +368,7 @@
 * body .lpg-s-banner-introduce .lpg-container .lpg-b-center .lpg-b-hst-8 {
   opacity: 0;
   transition: 0.5s ease-in-out;
-  background: url("../public/HIEU-QUA.png");
+  background: url(../public/HIEU-QUA.png);
   width: 150px;
   height: 150px;
   background-size: cover;
@@ -384,7 +384,7 @@
 * body .lpg-s-banner-introduce .lpg-container .lpg-b-center .lpg-b-hst-9 {
   transition: 0.5s ease-in-out;
   opacity: 0;
-  background: url("../public/LAN-TOA.png");
+  background: url(../public/LAN-TOA.png);
   width: 150px;
   height: 150px;
   background-size: cover;
