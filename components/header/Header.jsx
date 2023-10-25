@@ -22,7 +22,7 @@ const Header = () => {
               <Link href="/">Trang Chủ</Link>
             </li>
             <li>
-              <Link href="/gioithieu">Giới Thiệu</Link>
+              <Link href="/introduce">Giới Thiệu</Link>
             </li>
             <li>
               <Link href="">Sản Phẩm</Link>
@@ -34,12 +34,12 @@ const Header = () => {
               <Link href="">Liên Hệ</Link>
             </li>
             <li>
-              <Link href="" className="lpg-register">
+              <Link href="/register" className="lpg-register">
                 Đăng Ký
               </Link>
             </li>
             <li>
-              <Link href="" className="lpg-login">
+              <Link href="/login" className="lpg-login">
                 Đăng Nhập
               </Link>
             </li>

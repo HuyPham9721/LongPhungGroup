@@ -111,11 +111,75 @@
         }
       }
     }
+    .lpg-s-register {
+      padding: 50px 0;
+      .lpg-container {
+        .lpg-b-header {
+          width: 50%;
+          margin: auto;
+          border-top: 1px solid #111;
+          border-left: 1px solid #111;
+          border-right: 1px solid #111;
+          button {
+            border: none;
+            background: #111;
+            color: #faf16e;
+            padding: 15px 0;
+            cursor: pointer;
+            font-size: 19px;
+            font-weight: 700;
+            width: 50%;
+            &.lpg-btn-login {
+              width: 100% !important;
+              padding: 20px 0;
+            }
+            &.lpg-btn-active {
+              background: #fff;
+              color: #111;
+            }
+          }
+        }
+        .lpg-b-body {
+          width: 50%;
+          margin: auto;
+          border-bottom: 1px solid #111;
+          border-left: 1px solid #111;
+          border-right: 1px solid #111;
+          padding: 30px 40px;
+          form {
+            .lpg-form-group {
+              margin-bottom: 15px;
+              input {
+                width: 100%;
+                padding: 10px 20px;
+                outline: 0;
+              }
+            }
+            .lpg-btn-submit {
+              width: 100%;
+              padding: 10px 0px;
+              font-size: 19px;
+              font-weight: 700;
+              border: none;
+              cursor: pointer;
+              outline: 0;
+              background: #faf16e;
+              color: #111;
+              &:hover {
+                background: #957122;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
     footer {
       &.lpg-footer {
         background: #111;
         width: 100%;
         padding: 40px 0;
+        position: relative;
         .lpg-container {
           display: flex;
           justify-content: space-between;
