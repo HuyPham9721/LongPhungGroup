@@ -8,8 +8,8 @@
   color: #111;
   font-weight: 500;
   font-size: 0;
+  font-family: "Open Sans", sans-serif;
   body {
-    font-family: "Open Sans", sans-serif;
     h1,
     h2,
     h3,
@@ -29,7 +29,8 @@
     p,
     span,
     input,
-    button {
+    button,
+    i {
       font-size: 16px;
       color: #111;
     }
@@ -94,6 +95,46 @@
         }
       }
     }
+    .lpg-s-breakcrumb {
+      background: #f4f5f7;
+      padding: 60px 0;
+      margin-bottom: 40px;
+      .lpg-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1 {
+          font-size: 38px;
+          font-weight: 600;
+          text-transform: inherit;
+        }
+        nav {
+          ul {
+            li {
+              display: inline-block;
+              margin-left: 20px;
+              &::after {
+                content: "/";
+                display: inline-block;
+                font-size: 17px;
+                font-weight: 600;
+                margin-left: 20px;
+              }
+              &:last-child {
+                &::after {
+                  content: "";
+                }
+              }
+              a {
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+    }
     .lpg-s-banner-home {
       .lpg-b-banner {
         .lpg-b-img {
@@ -117,9 +158,9 @@
         .lpg-b-header {
           width: 50%;
           margin: auto;
-          border-top: 1px solid #111;
-          border-left: 1px solid #111;
-          border-right: 1px solid #111;
+          border-top: 2px solid #111;
+          border-left: 2px solid #111;
+          border-right: 2px solid #111;
           button {
             border: none;
             background: #111;
@@ -131,7 +172,7 @@
             width: 50%;
             &.lpg-btn-login {
               width: 100% !important;
-              padding: 20px 0;
+              padding: 15px 0;
             }
             &.lpg-btn-active {
               background: #fff;
@@ -142,9 +183,9 @@
         .lpg-b-body {
           width: 50%;
           margin: auto;
-          border-bottom: 1px solid #111;
-          border-left: 1px solid #111;
-          border-right: 1px solid #111;
+          border-bottom: 2px solid #111;
+          border-left: 2px solid #111;
+          border-right: 2px solid #111;
           padding: 30px 40px;
           form {
             .lpg-form-group {
@@ -485,6 +526,118 @@
       }
     }
     // end introduce
+    //contact us
+    .lpg-s-contact-us {
+      margin-bottom: 80px;
+      .lpg-container {
+        .lpg-contact-info-item {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid #ddd;
+          padding-bottom: 40px;
+          margin-bottom: 40px;
+          .lpg-b-info-item {
+            display: flex;
+
+            align-items: center;
+            width: 20%;
+            i {
+              font-size: 35px;
+            }
+            .lpg-b-if4 {
+              margin-left: 20px;
+              span {
+                display: block;
+                margin-bottom: 5px;
+                h2 {
+                  font-size: 19px;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+        }
+        .lpg-b-contact-info {
+          display: flex;
+          .lpg-b-left {
+            width: 60%;
+            margin-right: 10%;
+            h2 {
+              font-size: 20px;
+              margin-bottom: 30px;
+              font-weight: 700;
+            }
+            .lpg-form-send-mail {
+              .lpg-form-group-1 {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                margin-bottom: 20px;
+                input {
+                  width: 48%;
+                  padding: 10px 20px;
+                  outline: 0;
+                  border: 1px solid #ddd;
+                }
+              }
+              .lpg-form-group {
+                margin-bottom: 20px;
+                input {
+                  width: 100%;
+                  padding: 10px 20px;
+                  outline: 0;
+                  border: 1px solid #ddd;
+                }
+                textarea {
+                  width: 100%;
+                  height: 150px;
+                  border: 1px solid #ddd;
+                  outline: 0;
+                  font-size: 16px;
+                  padding: 20px;
+                }
+                .lpg-btn-submit {
+                  width: 30%;
+                  padding: 10px 0;
+                  font-weight: 700;
+                  border: none;
+                  background: #111;
+                  color: #fff;
+                  cursor: pointer;
+                  &:hover {
+                    background: #faf16e;
+                    color: #111;
+                  }
+                }
+              }
+            }
+          }
+          .lpg-b-right {
+            width: 30%;
+            h2 {
+              font-size: 20px;
+              font-weight: 700;
+              margin-bottom: 30px;
+            }
+            span {
+              margin-bottom: 20px;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    .lpg-s-map-contact {
+      width: 100%;
+      .lpg-map {
+        width: 100%;
+        height: 600px;
+        border: none;
+      }
+    }
+    //end contact us
   }
 }
 // slide home page

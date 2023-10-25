@@ -8,18 +8,46 @@ export default class MyDocument extends Document {
         data-wf-page="61f483667f6caa8a8181540e"
         data-wf-site="611c8104e15cb659481fb48d"
       >
-        {" "}
-        <link
-          href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css"
-          rel="stylesheet"
-          type="text/css"
-        />
         <Head>
           <meta name="mobile-web-app-capable" content="yes" />
+          <link
+            rel="stylesheet"
+            data-purpose="Layout StyleSheet"
+            title="Web Awesome"
+            href="/css/app-wa-02670e9412103b5852dcbe140d278c49.css?vsn=d"
+          />
+
+          <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+          />
+
+          <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css"
+          />
+
+          <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css"
+          />
+
+          <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css"
+          />
         </Head>
         <body className="body">
           <Main />
           <NextScript />
+          <div id="fb-root"></div>{" "}
+          <script
+            async
+            defer
+            crossorigin="anonymous"
+            src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v18.0"
+            nonce="bNlnCOUO"
+          ></script>
         </body>
       </Html>
     );

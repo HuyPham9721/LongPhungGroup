@@ -8,8 +8,6 @@
   color: #111;
   font-weight: 500;
   font-size: 0;
-}
-* body {
   font-family: "Open Sans", sans-serif;
 }
 * body h1,
@@ -31,7 +29,8 @@
 * body p,
 * body span,
 * body input,
-* body button {
+* body button,
+* body i {
   font-size: 16px;
   color: #111;
 }
@@ -88,6 +87,40 @@
   transform: translateY(-10%);
   box-shadow: 0px 5px 0px 0px #111;
 }
+* body .lpg-s-breakcrumb {
+  background: #f4f5f7;
+  padding: 60px 0;
+  margin-bottom: 40px;
+}
+* body .lpg-s-breakcrumb .lpg-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+* body .lpg-s-breakcrumb .lpg-container h1 {
+  font-size: 38px;
+  font-weight: 600;
+  text-transform: inherit;
+}
+* body .lpg-s-breakcrumb .lpg-container nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+* body .lpg-s-breakcrumb .lpg-container nav ul li::after {
+  content: "/";
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+* body .lpg-s-breakcrumb .lpg-container nav ul li:last-child::after {
+  content: "";
+}
+* body .lpg-s-breakcrumb .lpg-container nav ul li a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+}
 * body .lpg-s-banner-home .lpg-b-banner .lpg-b-img {
   width: 100%;
   height: 600px;
@@ -108,9 +141,9 @@
 * body .lpg-s-register .lpg-container .lpg-b-header {
   width: 50%;
   margin: auto;
-  border-top: 1px solid #111;
-  border-left: 1px solid #111;
-  border-right: 1px solid #111;
+  border-top: 2px solid #111;
+  border-left: 2px solid #111;
+  border-right: 2px solid #111;
 }
 * body .lpg-s-register .lpg-container .lpg-b-header button {
   border: none;
@@ -124,7 +157,7 @@
 }
 * body .lpg-s-register .lpg-container .lpg-b-header button.lpg-btn-login {
   width: 100% !important;
-  padding: 20px 0;
+  padding: 15px 0;
 }
 * body .lpg-s-register .lpg-container .lpg-b-header button.lpg-btn-active {
   background: #fff;
@@ -133,9 +166,9 @@
 * body .lpg-s-register .lpg-container .lpg-b-body {
   width: 50%;
   margin: auto;
-  border-bottom: 1px solid #111;
-  border-left: 1px solid #111;
-  border-right: 1px solid #111;
+  border-bottom: 2px solid #111;
+  border-left: 2px solid #111;
+  border-right: 2px solid #111;
   padding: 30px 40px;
 }
 * body .lpg-s-register .lpg-container .lpg-b-body form .lpg-form-group {
@@ -456,6 +489,111 @@
   top: 10%;
   left: 23%;
   transform: translateX(50%);
+}
+* body .lpg-s-contact-us {
+  margin-bottom: 80px;
+}
+* body .lpg-s-contact-us .lpg-container .lpg-contact-info-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+* body .lpg-s-contact-us .lpg-container .lpg-contact-info-item .lpg-b-info-item {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+* body .lpg-s-contact-us .lpg-container .lpg-contact-info-item .lpg-b-info-item i {
+  font-size: 35px;
+}
+* body .lpg-s-contact-us .lpg-container .lpg-contact-info-item .lpg-b-info-item .lpg-b-if4 {
+  margin-left: 20px;
+}
+* body .lpg-s-contact-us .lpg-container .lpg-contact-info-item .lpg-b-info-item .lpg-b-if4 span {
+  display: block;
+  margin-bottom: 5px;
+}
+* body .lpg-s-contact-us .lpg-container .lpg-contact-info-item .lpg-b-info-item .lpg-b-if4 span h2 {
+  font-size: 19px;
+  font-weight: 600;
+}
+* body .lpg-s-contact-us .lpg-container .lpg-b-contact-info {
+  display: flex;
+}
+* body .lpg-s-contact-us .lpg-container .lpg-b-contact-info .lpg-b-left {
+  width: 60%;
+  margin-right: 10%;
+}
+* body .lpg-s-contact-us .lpg-container .lpg-b-contact-info .lpg-b-left h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+* body .lpg-s-contact-us .lpg-container .lpg-b-contact-info .lpg-b-left .lpg-form-send-mail .lpg-form-group-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+* body .lpg-s-contact-us .lpg-container .lpg-b-contact-info .lpg-b-left .lpg-form-send-mail .lpg-form-group-1 input {
+  width: 48%;
+  padding: 10px 20px;
+  outline: 0;
+  border: 1px solid #ddd;
+}
+* body .lpg-s-contact-us .lpg-container .lpg-b-contact-info .lpg-b-left .lpg-form-send-mail .lpg-form-group {
+  margin-bottom: 20px;
+}
+* body .lpg-s-contact-us .lpg-container .lpg-b-contact-info .lpg-b-left .lpg-form-send-mail .lpg-form-group input {
+  width: 100%;
+  padding: 10px 20px;
+  outline: 0;
+  border: 1px solid #ddd;
+}
+* body .lpg-s-contact-us .lpg-container .lpg-b-contact-info .lpg-b-left .lpg-form-send-mail .lpg-form-group textarea {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #ddd;
+  outline: 0;
+  font-size: 16px;
+  padding: 20px;
+}
+* body .lpg-s-contact-us .lpg-container .lpg-b-contact-info .lpg-b-left .lpg-form-send-mail .lpg-form-group .lpg-btn-submit {
+  width: 30%;
+  padding: 10px 0;
+  font-weight: 700;
+  border: none;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+}
+* body .lpg-s-contact-us .lpg-container .lpg-b-contact-info .lpg-b-left .lpg-form-send-mail .lpg-form-group .lpg-btn-submit:hover {
+  background: #faf16e;
+  color: #111;
+}
+* body .lpg-s-contact-us .lpg-container .lpg-b-contact-info .lpg-b-right {
+  width: 30%;
+}
+* body .lpg-s-contact-us .lpg-container .lpg-b-contact-info .lpg-b-right h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+* body .lpg-s-contact-us .lpg-container .lpg-b-contact-info .lpg-b-right span {
+  margin-bottom: 20px;
+  display: block;
+}
+* body .lpg-s-map-contact {
+  width: 100%;
+}
+* body .lpg-s-map-contact .lpg-map {
+  width: 100%;
+  height: 600px;
+  border: none;
 }
 
 .slick-slider.slick-initialized .slick-arrow.slick-prev {

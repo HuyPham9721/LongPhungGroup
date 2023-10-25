@@ -6,7 +6,7 @@ const Login = () => {
   const onSubmit = () => {};
   return (
     <>
-      <DefaultLayout>
+      <DefaultLayout showBreakcrumb="true">
         <section className="lpg-s-register">
           <div className="lpg-container">
             <div className="lpg-b-header">

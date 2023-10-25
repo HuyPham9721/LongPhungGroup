@@ -31,7 +31,10 @@ const Header = () => {
               <Link href="">Tin Tức</Link>
             </li>
             <li>
-              <Link href="">Liên Hệ</Link>
+              <Link href="/contact-us">Liên Hệ</Link>
+            </li>
+            <li>
+              <button type="button" className="lpg-btn-search"></button>
             </li>
             <li>
               <Link href="/register" className="lpg-register">

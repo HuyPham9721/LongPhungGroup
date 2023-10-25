@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 const Footer = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
   return (
     <>
       <footer className="lpg-footer">
@@ -41,6 +47,26 @@ const Footer = () => {
           </div>
           <div className="lpg-info-3">
             <h2>Hệ Sinh Thái</h2>
+            {/* <div
+              class="fb-page"
+              data-href="https://www.facebook.com/longphunggroup97"
+              data-tabs=""
+              data-width="400"
+              data-height="300"
+              data-small-header="false"
+              data-adapt-container-width="false"
+              data-hide-cover="false"
+              data-show-facepile="false"
+            >
+              <blockquote
+                cite="https://www.facebook.com/longphunggroup97"
+                class="fb-xfbml-parse-ignore"
+              >
+                <a href="https://www.facebook.com/longphunggroup97">
+                  Long Phụng Group
+                </a>
+              </blockquote>
+            </div> */}
           </div>
           <div className="lpg-info-4">
             <h2>Đăng ký bản tin</h2>
