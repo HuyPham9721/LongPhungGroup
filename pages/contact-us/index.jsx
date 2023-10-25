@@ -108,7 +108,7 @@ const ContactUs = () => {
                 </div>
               </div>
               <div className="lpg-b-right">
-                <h2>Địa chỉ của chúng tôi</h2>
+                <h2>Long Phụng Group</h2>
                 <span>
                   Tư thái của người trẻ tuổi khi nỗ lực hướng về một mục tiêu
                   nào đó, là tư thế mạnh mẽ nhất, mới mẻ nhất, tươi đẹp nhất.
@@ -129,9 +129,9 @@ const ContactUs = () => {
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d823.7995395914046!2d106.66738310224954!3d10.836309977090416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529063a1b0bcf%3A0x82974b5eebb5d669!2zSOG7kyBCxqFpIGNodW5nIGPGsCBDaXR5bGFuZCBQYXJrIEhpbGxz!5e0!3m2!1svi!2s!4v1698226435954!5m2!1svi!2s"
             width="600"
             height="450"
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </section>
       </DefaultLayout>

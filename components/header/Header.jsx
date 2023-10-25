@@ -1,12 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 const Header = () => {
+  const router = useRouter();
+
+  console.log(router);
   return (
     <>
       <header className="lpg-container lpg-hdr">
         <div className="lpg-b-logo">
           <Link href="/">
-            {" "}
             <Image
               src="/logo-lpg.png"
               width={500}
@@ -32,9 +35,6 @@ const Header = () => {
             </li>
             <li>
               <Link href="/contact-us">Liên Hệ</Link>
-            </li>
-            <li>
-              <button type="button" className="lpg-btn-search"></button>
             </li>
             <li>
               <Link href="/register" className="lpg-register">
