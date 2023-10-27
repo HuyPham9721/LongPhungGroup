@@ -33,13 +33,12 @@ export default class MyDocument extends Document {
         <body className="body">
           <Main />
           <NextScript />
-          <div id="fb-root"></div>{" "}
           <script
             async
             defer
             crossorigin="anonymous"
-            src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v18.0"
-            nonce="bNlnCOUO"
+            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v18.0"
+            nonce="631ke54t"
           ></script>
         </body>
       </Html>

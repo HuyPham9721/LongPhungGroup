@@ -1,12 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-const Footer = () => {
-  const [isClient, setIsClient] = useState(false);
 
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
+const Footer = () => {
   return (
     <>
       <footer className="lpg-footer">
@@ -44,30 +40,7 @@ const Footer = () => {
                 </li>
               </ul>
             </nav>
-          </div>
-          <div className="lpg-info-3">
-            <h2>Hệ Sinh Thái</h2>
-            {/* <div
-              class="fb-page"
-              data-href="https://www.facebook.com/longphunggroup97"
-              data-tabs=""
-              data-width="400"
-              data-height="300"
-              data-small-header="false"
-              data-adapt-container-width="false"
-              data-hide-cover="false"
-              data-show-facepile="false"
-            >
-              <blockquote
-                cite="https://www.facebook.com/longphunggroup97"
-                class="fb-xfbml-parse-ignore"
-              >
-                <a href="https://www.facebook.com/longphunggroup97">
-                  Long Phụng Group
-                </a>
-              </blockquote>
-            </div> */}
-          </div>
+          </div>{" "}
           <div className="lpg-info-4">
             <h2>Đăng ký bản tin</h2>
             <div className="lpg-form">
@@ -80,6 +53,17 @@ const Footer = () => {
                 </button>
               </div>
             </div>
+          </div>
+          <div className="lpg-info-3">
+            <h2>Fanpage</h2>
+            <iframe
+              className="lpg-fanpage-fb"
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flongphunggroup97&tabs=fanpage&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+              scrolling="no"
+              frameborder="0"
+              allowfullscreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            ></iframe>
           </div>
         </div>
       </footer>
