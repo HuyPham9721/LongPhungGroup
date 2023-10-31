@@ -2,8 +2,7 @@ import { DefaultLayout } from "../layouts";
 import Slider from "react-slick";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect } from "react";
-import Countdown from "react-countdown";
+import { useEffect, useState } from "react";
 export default function Home() {
   const settings = {
     dots: false,
@@ -21,7 +20,44 @@ export default function Home() {
     slidesToScroll: 1,
     arrows: true,
   };
+  const calculateTimeLeft = () => {
+    let year = new Date().getFullYear();
+    let difference = +new Date(`11/15/${year}`) - +new Date();
 
+    let timeLeft = {};
+    if (difference > 0) {
+      timeLeft = {
+        Ngày: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        Giờ: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        Phút: Math.floor((difference / 1000 / 60) % 60),
+        Giây: Math.floor((difference / 1000) % 60),
+      };
+    }
+
+    return timeLeft;
+  };
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [year] = useState(new Date().getFullYear());
+  const timerComponents = [];
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+    return () => clearTimeout(timer);
+  });
+
+  Object.keys(timeLeft).forEach((interval) => {
+    if (!timeLeft[interval]) {
+      return;
+    }
+
+    timerComponents.push(
+      <span key={interval} className="lpg-timer-promotions">
+        {timeLeft[interval]}
+        {interval}{" "}
+      </span>
+    );
+  });
   return (
     <DefaultLayout>
       <section className="lpg-s-banner-home">
@@ -49,7 +85,7 @@ export default function Home() {
       <section className="lpg-s-founder">
         <div className="lpg-container">
           <div className="lpg-b-inf4 lpg-founder">
-            <Image src="/founder.jpg" width={480} height={480}></Image>
+            <Image src="/founder.jpg" alt="" width={480} height={480}></Image>
             <div className="lpg-b-contact">
               <h1>Founder</h1>
               <Link className="lpg-a-name" href="">
@@ -66,7 +102,12 @@ export default function Home() {
             </div>
           </div>
           <div className="lpg-b-inf4 lpg-cofounder">
-            <Image src="/co-founder.jpg" width={480} height={480}></Image>
+            <Image
+              src="/co-founder.jpg"
+              alt=""
+              width={480}
+              height={480}
+            ></Image>
             <div className="lpg-b-contact">
               <h1>Co-Founder</h1>
               <Link className="lpg-a-name" href="">
@@ -168,15 +209,107 @@ export default function Home() {
       </section>
       <section className="lpg-s-promotions">
         <div className="lpg-container">
-          <h1>Promotions</h1>
-          <p>
-            The standard chunk of Lorem Ipsum used since the 1500s is reproduced
-            for those. Sections 1.10.32 and 1.10.33 from “de Finibus Bonorum et
-            Malorum
-          </p>
-          <span>
-            <Countdown date={Date.now() + 1000000} onTick={true} />
-          </span>
+          <h1>Long Phụng Days</h1>
+          <p>Long Phụng Days là ...................................</p>
+          <div className="lpg-b-timer">
+            {timerComponents.length ? timerComponents : <span>Time's up!</span>}
+          </div>
+          <Link href="" className="lpg-time-more">
+            Xem Thêm
+          </Link>
+        </div>
+      </section>
+      <section className="lpg-s-news">
+        <div className="lpg-container">
+          <div className="lpg-b-header">
+            <h1>Tin Tức Nổi Bật</h1>
+          </div>
+          <div className="lpg-b-body">
+            <div className="lpg-b-items">
+              <div className="lpg-b-img">
+                <Link href="">
+                  <Image
+                    src="/Testing570px.jpg"
+                    alt=""
+                    width={570}
+                    height={370}
+                  ></Image>
+                </Link>
+              </div>
+              <div className="lpg-b-content">
+                <Link href="" className="lpg-a-title">
+                  Interior design is the art, the interior designer is the
+                  artist.
+                </Link>
+                <nav className="lpg-nav-day">
+                  <ul>
+                    <li>
+                      <span>Octobe 15, 2022</span>
+                    </li>
+                    <li>
+                      <Link href="">Hastheme</Link>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div className="lpg-b-items">
+              <div className="lpg-b-img">
+                <Link href="">
+                  <Image
+                    src="/Testing570px.jpg"
+                    alt=""
+                    width={570}
+                    height={370}
+                  ></Image>
+                </Link>
+              </div>
+              <div className="lpg-b-content">
+                <Link href="" className="lpg-a-title">
+                  Interior design is the art, the interior designer is the
+                  artist.
+                </Link>
+                <nav className="lpg-nav-day">
+                  <ul>
+                    <li>
+                      <span>Octobe 15, 2022</span>
+                    </li>
+                    <li>
+                      <Link href="">Hastheme</Link>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div className="lpg-b-items">
+              <div className="lpg-b-img">
+                <Link href="">
+                  <Image
+                    src="/Testing570px.jpg"
+                    alt=""
+                    width={570}
+                    height={370}
+                  ></Image>
+                </Link>
+              </div>
+              <div className="lpg-b-content">
+                <Link href="" className="lpg-a-title">
+                  Interior design is the art, the interior designer is the
+                  artist.
+                </Link>
+                <nav className="lpg-nav-day">
+                  <ul>
+                    <li>
+                      <span>Octobe 15, 2022</span>
+                    </li>
+                    <li>
+                      <Link href="">Hastheme</Link>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </DefaultLayout>
@@ -184,7 +317,7 @@ export default function Home() {
 }
 
 export async function getServerSideProps() {
-  return {
-    props: {},
-  };
+  // Fetch data from external API
+
+  return { props: {} };
 }
