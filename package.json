@@ -10,12 +10,14 @@
   },
   "dependencies": {
     "final-form": "^4.20.10",
+    "jquery": "^3.7.1",
     "next": "13.5.6",
     "react": "^18",
     "react-countdown": "^2.3.5",
     "react-dom": "^18",
     "react-final-form": "^6.5.9",
     "react-hydration-provider": "^2.0.0",
+    "react-responsive-modal": "^6.4.2",
     "react-slick": "^0.29.0",
     "sass": "^1.69.4",
     "slick-carousel": "^1.8.1"

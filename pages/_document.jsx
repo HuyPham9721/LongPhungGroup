@@ -40,6 +40,7 @@ export default class MyDocument extends Document {
             src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v18.0"
             nonce="631ke54t"
           ></script>
+          <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         </body>
       </Html>
     );

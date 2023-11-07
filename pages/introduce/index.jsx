@@ -1,6 +1,8 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { DefaultLayout } from "../../layouts";
 import Image from "next/image";
+import { Information } from "../../components";
+import $ from "jquery";
 const Introduce = () => {
   useEffect(() => {
     const btn1 = document.querySelector(".lpg-b-hst-1");
@@ -63,6 +65,31 @@ const Introduce = () => {
         timeout9
       );
   }, []);
+  const [open, setOpen] = useState(false);
+  const handleOpen = (e) => {
+    let a = e.target.className;
+    let b = $(".lpg-span-color");
+    let c = [];
+    $(e.target).addClass("clicked");
+    for (let i = 0; i < b.length; i++) {
+      $(b[i]).addClass("expanded");
+    }
+
+    setTimeout(() => {
+      $(e.target).removeClass("clicked");
+    }, 1500);
+    setTimeout(() => {
+      document.querySelectorAll("span").forEach((element) => {
+        element.classList.remove("expanded");
+      });
+      setOpen(true);
+    }, 1300);
+  };
+  const onCloseModal = () => {
+    setOpen(false);
+    $(".lpg-b-hst").removeClass("clicked");
+    $(".lpg-span-color").removeClass("expanded");
+  };
   return (
     <>
       <DefaultLayout>
@@ -76,20 +103,73 @@ const Introduce = () => {
                 alt="Picture of the author"
                 className="lpg-big-logo"
               />
-              <button type="button" className="lpg-b-hst-1"></button>
-              <button type="button" className="lpg-b-hst-2"></button>
-              <button type="button" className="lpg-b-hst-3"></button>
-              <button type="button" className="lpg-b-hst-4"></button>
-              <button type="button" className="lpg-b-hst-5"></button>
-              <button type="button" className="lpg-b-hst-6"></button>
-              <button type="button" className="lpg-b-hst-7"></button>
-              <button type="button" className="lpg-b-hst-8"></button>
-              <button type="button" className="lpg-b-hst-9"></button>
+              <button
+                type="button"
+                className="lpg-b-hst lpg-b-hst-1"
+                onClick={(e) => handleOpen(e)}
+              ></button>
+              <button
+                type="button"
+                className="lpg-b-hst lpg-b-hst-2"
+                onClick={(e) => handleOpen(e)}
+              ></button>
+              <button
+                type="button"
+                className="lpg-b-hst lpg-b-hst-3"
+                onClick={(e) => handleOpen(e)}
+              ></button>
+              <button
+                type="button"
+                className="lpg-b-hst lpg-b-hst-4"
+                onClick={(e) => handleOpen(e)}
+              ></button>
+              <button
+                type="button"
+                className="lpg-b-hst lpg-b-hst-5"
+                onClick={(e) => handleOpen(e)}
+              ></button>
+              <button
+                type="button"
+                className="lpg-b-hst lpg-b-hst-6"
+                onClick={(e) => handleOpen(e)}
+              ></button>
+              <button
+                type="button"
+                className="lpg-b-hst lpg-b-hst-7"
+                onClick={(e) => handleOpen(e)}
+              ></button>
+              <button
+                type="button"
+                className="lpg-b-hst lpg-b-hst-8"
+                onClick={(e) => handleOpen(e)}
+              ></button>
+              <button
+                type="button"
+                className="lpg-b-hst lpg-b-hst-9"
+                onClick={(e) => handleOpen(e)}
+              ></button>
             </div>
           </div>
         </section>
+        <div className="lpg-b-color">
+          <span className="lpg-span-color red" data-value="1"></span>
+          <span className="lpg-span-color blue" data-value="1"></span>
+          <span className="lpg-span-color black" data-value="1"></span>
+          <span className="lpg-span-color white" data-value="1"></span>
+        </div>
+        <div className="lpg-b-modal-gtcl">
+          <Information
+            onCloseModal={onCloseModal}
+            open={open}
+            title="asd"
+            description="aaaaaaaaaaaaa"
+          ></Information>
+        </div>
       </DefaultLayout>
     </>
   );
 };
 export default Introduce;
+export async function getServerSideProps() {
+  return { props: {} };
+}

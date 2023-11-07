@@ -13,20 +13,20 @@ const ContactUs = () => {
                 <i className="fa-regular fa-timer"></i>
                 <div className="lpg-b-if4">
                   <span>
-                    <h2>Open House</h2>
+                    <h2>Mở Cửa</h2>
                   </span>
-                  <span>Mon – Fri : 8:30 – 18:00 </span>
-                  <span>Sat – Sun : 9:00 – 17:00</span>
+                  <span>Sáng : 7:30 – 11:30 </span>
+                  <span>Chiều : 13:30 – 18:00</span>
                 </div>
               </div>
               <div className="lpg-b-info-item">
                 <i className="fa-regular fa-phone-volume"></i>
                 <div className="lpg-b-if4">
                   <span>
-                    <h2>Phone number</h2>
+                    <h2>Điện Thoại</h2>
                   </span>
-                  <span>Mon – Fri : 8:30 – 18:00 </span>
-                  <span>Sat – Sun : 9:00 – 17:00</span>
+                  <span>0967681652</span>
+                  <span>0982924643</span>
                 </div>
               </div>{" "}
               <div className="lpg-b-info-item">
@@ -34,7 +34,7 @@ const ContactUs = () => {
                 <div className="lpg-b-if4">
                   {" "}
                   <span>
-                    <h2>Our email</h2>
+                    <h2>Email</h2>
                   </span>
                   <span> office@helentheme.com</span>
                   <span>Info@helentheme.com</span>
@@ -45,9 +45,12 @@ const ContactUs = () => {
                 <div className="lpg-b-if4">
                   {" "}
                   <span>
-                    <h2>Our location</h2>
+                    <h2>Địa Chỉ</h2>
                   </span>
-                  <span>1102 Helen Estates, Guys Store, San Diego, USA.</span>
+                  <span>
+                    44-46 đường số 8 Khu dân cư Cityland, phường 10, quận Gò
+                    Vấp, thành phố Hồ Chí Minh
+                  </span>
                 </div>
               </div>
             </div>

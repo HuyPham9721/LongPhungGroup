@@ -9,15 +9,22 @@ const Footer = () => {
         <div className="lpg-container">
           <div className="lpg-info-1">
             <Image
+              className="lpg-logo"
               src="/logo-lpg-1.png"
               width={500}
               height={500}
               alt="Picture of the author"
             />
-            <span>
-              Thành công của chúng tôi trong việc tạo ra các giải pháp kinh
-              doanh phần lớn nhờ vào đội ngũ tài năng và tận tâm của chúng tôi.
-            </span>
+
+            <div>
+              <Image
+                className="lpg-font-logo"
+                src="/fontLPG.png"
+                width={500}
+                height={500}
+                alt="Picture of the author"
+              />
+            </div>
           </div>
           <div className="lpg-info-2">
             <h2>Long Phụng Group</h2>

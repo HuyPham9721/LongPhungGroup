@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+
 export default function Home() {
   const settings = {
     dots: false,
@@ -92,9 +93,19 @@ export default function Home() {
                 Nguyễn Thị Ngọc Thủy
               </Link>
               <span>
-                Khi chúng ta mong ước cuộc đời không nghịch cảnh, hãy nhớ rằng
-                cây sồi trở nên mạnh mẽ trong gió ngược, và kim cương hình thành
-                dưới áp lực.
+                Bằng công cụ ngành KDHT, tôi muốn cùng đội ngũ của mình biến
+                Long Phụng Group trở thành một Hệ sinh thái đáng sống phục vụ
+                cho các thành viên trong Long Phụng Group và cộng đồng. Long
+                Phụng Group sẽ là doanh nghiệp tiên phong đi đầu trong xu thế
+                mới, tạo ra bước ngoặc trong hành trình KDHT. Chứng minh KDHT là
+                con đường thật sự để giúp chúng ta có thể thành công trong đa
+                lĩnh vực.
+              </span>
+              <span className="lpg-mg-bottom">
+                Long Phụng Group sẽ không chỉ dừng lại ở việc xây dựng một mạng
+                lưới kinh doanh giúp hàng triệu người khỏe - đẹp - giàu có trong
+                ngành KDHT, mà chúng ta sẽ còn là một Tập đoàn về kinh tế với
+                trị giá hàng triệu USD trong tương lai.
               </span>
               <Link className="lpg-a-readmore" href="">
                 Xem Thêm
@@ -114,10 +125,24 @@ export default function Home() {
                 Nguyễn Kim Trọng
               </Link>
               <span>
-                Bạn thật sự có thể tạo ra điều khác biệt. Tuy nhiên, bạn không
-                thể thay đổi thế giới chỉ trong một đêm. Điều đó nghe thật nản
-                lòng. Bởi vì thay đổi là một điều khó khăn nên phải cần rất
-                nhiều sự nỗ lực.
+                Bất kể xuất phát điểm của bạn là ai, chỉ cần có khát vọng vươn
+                lên thì ngành KDHT là con đường tuyệt vời nhất dành cho bạn và
+                Long Phụng Group sẽ là sân chơi tốt nhất trong ngành KDHT để bạn
+                lựa chọn khởi nghiệp. Khát vọng của chúng tôi là tạo ra 10.000
+                Diamond Up trên hành trình KDHT.
+              </span>
+              <span className="lpg-span-limit-text lpg-mg-bottom">
+                Trong nhiều năm qua, những công ty của Nước ngoài mang sản phẩm
+                của họ về Việt Nam và đem tiền của người Việt Nam về làm giàu
+                cho Nước họ. Với những tinh hoa của dân tộc, lịch sử hàng ngàn
+                năm vĩ đại, tại sao chúng ta không làm điều ngược lại? Đem sản
+                phẩm của Việt Nam đi ra Nước ngoài - Đem ngoại tệ người Nước
+                ngoài về làm giàu lại cho người dân Nước mình và chứng minh cho
+                Thế Giới thấy người Việt Nam chúng ta giỏi như thế nào. Đồng cảm
+                được điều đó, bằng công cụ ngành KDHT cùng với nền tảng vững
+                chắc của VNL, Long Phụng Group đeo đuổi hoài bão trong tương lai
+                hệ thống của Long Phụng Group sẽ phủ sóng khắp cả Nước và mang
+                thương hiệu người Việt Nam đi chinh phạt thị trường Thế Giới.
               </span>
               <Link className="lpg-a-readmore" href="">
                 Xem Thêm
@@ -143,7 +168,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="lpg-b-content">
-                  <h1>Diamond</h1>
+                  <h1>EMERALD</h1>
                   <Link href="">Nguyễn Thị Ngọc Thủy</Link>
                 </div>
               </div>
@@ -157,8 +182,8 @@ export default function Home() {
                   />
                 </div>
                 <div className="lpg-b-content">
-                  <h1>Diamond</h1>
-                  <Link href="">Nguyễn Thị Ngọc Thủy</Link>
+                  <h1>DIAMOND</h1>
+                  <Link href="">Nguyễn Kim Trọng</Link>
                 </div>
               </div>
               <div className="lpg-b-item">
@@ -219,7 +244,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <section className="lpg-s-news">
+      <section className="lpg-s-new">
         <div className="lpg-container">
           <div className="lpg-b-header">
             <h1>Tin Tức Nổi Bật</h1>
