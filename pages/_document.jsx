@@ -32,15 +32,14 @@ export default class MyDocument extends Document {
         </Head>
         <body className="body">
           <Main />
-          <NextScript />
-          <script
-            async
-            defer
-            crossorigin="anonymous"
-            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v18.0"
-            nonce="631ke54t"
-          ></script>
-          <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+          <NextScript>
+            <script
+              async
+              defer
+              crossOrigin="anonymous"
+              src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v18.0"
+            ></script>
+          </NextScript>
         </body>
       </Html>
     );

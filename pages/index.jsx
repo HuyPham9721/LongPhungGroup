@@ -237,7 +237,7 @@ export default function Home() {
           <h1>Long Phụng Days</h1>
           <p>Long Phụng Days là ...................................</p>
           <div className="lpg-b-timer">
-            {timerComponents.length ? timerComponents : <span>Time's up!</span>}
+            {timerComponents.length ? timerComponents : <span>Times up!</span>}
           </div>
           <Link href="" className="lpg-time-more">
             Xem Thêm
