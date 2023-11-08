@@ -1,11 +1,11 @@
 import { Form, Field } from "react-final-form";
 import { DefaultLayout } from "../../layouts";
 import { useState } from "react";
-const Register = () => {
+const Register = (props) => {
   const onSubmit = () => {};
   return (
     <>
-      <DefaultLayout showBreakcrumb="true">
+      <DefaultLayout showBreakcrumb={true} breakcrumb={props.breakcrumb}>
         <section className="lpg-s-register">
           <div className="lpg-container">
             <div className="lpg-b-header">
@@ -54,3 +54,13 @@ const Register = () => {
   );
 };
 export default Register;
+export async function getServerSideProps() {
+  return {
+    props: {
+      breakcrumb: {
+        title: "Đăng Ký",
+        link: "/register",
+      },
+    },
+  };
+}

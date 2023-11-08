@@ -45,7 +45,7 @@ const Header = () => {
                 <Link href="/introduce">Giới Thiệu</Link>
               </li>
               <li>
-                <Link href="">Sản Phẩm</Link>
+                <Link href="/shop">Sản Phẩm</Link>
               </li>
               <li>
                 <Link href="/news">Tin Tức</Link>

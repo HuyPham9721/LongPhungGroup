@@ -1,10 +1,13 @@
 import { Header, Footer, Breakcrumb } from "../../components";
-const DefaultLayout = ({ children, showBreakcrumb = false }) => {
+const DefaultLayout = ({
+  children,
+  breakcrumb = {},
+  showBreakcrumb = false,
+}) => {
   return (
     <>
       <Header></Header>
-
-      {showBreakcrumb && <Breakcrumb></Breakcrumb>}
+      {showBreakcrumb && <Breakcrumb breakcrumb={breakcrumb}></Breakcrumb>}
       {children}
       <Footer></Footer>
     </>

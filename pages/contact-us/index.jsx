@@ -1,11 +1,11 @@
 import { DefaultLayout } from "../../layouts";
 import { Form, Field } from "react-final-form";
 import { useState } from "react";
-const ContactUs = () => {
+const ContactUs = (props) => {
   const onSubmit = () => {};
   return (
     <>
-      <DefaultLayout showBreakcrumb="true">
+      <DefaultLayout showBreakcrumb={true} breakcrumb={props.breakcrumb}>
         <section className="lpg-s-contact-us">
           <div className="lpg-container">
             <div className="lpg-contact-info-item">
@@ -142,3 +142,13 @@ const ContactUs = () => {
   );
 };
 export default ContactUs;
+export async function getServerSideProps() {
+  return {
+    props: {
+      breakcrumb: {
+        title: "Liên Hệ",
+        link: "/contact-us",
+      },
+    },
+  };
+}

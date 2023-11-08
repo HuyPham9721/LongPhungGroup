@@ -1,10 +1,10 @@
 import { DefaultLayout } from "../../layouts";
 import Link from "next/link";
 import Image from "next/image";
-const News = () => {
+const News = (props) => {
   return (
     <>
-      <DefaultLayout showBreakcrumb="true">
+      <DefaultLayout showBreakcrumb={true} breakcrumb={props.breakcrumb}>
         <section className="lpg-s-news">
           <div className="lpg-container">
             <div className="lpg-b-header">
@@ -212,3 +212,13 @@ const News = () => {
   );
 };
 export default News;
+export async function getServerSideProps() {
+  return {
+    props: {
+      breakcrumb: {
+        title: "Tin Tức",
+        link: "/news",
+      },
+    },
+  };
+}

@@ -1,17 +1,17 @@
 import Link from "next/link";
-const Breakcrumb = () => {
+const Breakcrumb = ({ breakcrumb: { title = "", link = "/" } }) => {
   return (
     <>
       <section className="lpg-s-breakcrumb">
         <div className="lpg-container">
-          <h1>Contact</h1>
+          <h1>{title}</h1>
           <nav>
             <ul>
               <li>
-                <Link href="/">Home</Link>
+                <Link href="/">Trang Chủ</Link>
               </li>
               <li>
-                <Link href="/">Contact Us</Link>
+                <Link href={link}>{title}</Link>
               </li>
             </ul>
           </nav>
