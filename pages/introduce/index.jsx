@@ -74,7 +74,7 @@ const Introduce = (props) => {
         "Lấy phát triển con người làm gốc để phát triển công việc kinh doanh, Long Phụng Group đặc biệt chú trọng vào giá trị giáo dục. Được ví như một trường Đại học, Long Phụng Group tạo ra một nền giáo dục giúp NPP được học tập & phát triển với tôn chỉ “ Thành nhân trước khi thành công ” cùng với khát vọng to lớn về con đường góp phần “ Thay đổi tư duy cho nền giáo dục Việt Nam ” trong tương lai.",
     },
     2: {
-      title: "2. Ecosystem: HỆ SINH THÁI",
+      title: "2. E-cosystem: HỆ SINH THÁI",
       description:
         "Không chỉ tạo ra môi trường làm việc & học tập tiến bộ cho NPP, điều mà Long Phụng Group còn hướng đến đó chính là tạo ra những Hệ sinh thái & ứng dụng những Hệ sinh thái đó vào trong công việc để phát triển công việc kinh doanh, tạo nên tập thể thành công vững mạnh. Đặc biệt những Hệ sinh thái của Long Phụng Group còn phục vụ cho những lợi ích khác nhau của đời sống cho cộng đồng & cho những NPP Long Phụng Group góp phần biến Long Phụng Group không chỉ là nơi đáng học tập, đáng làm việc mà còn là nơi đáng sống, đáng tận hưởng. Chứng minh ngành KDHT nói chung & Long Phụng Group nói riêng là nền tảng thực sự cho mọi sự thành công trong nhiều lĩnh vực của NPP.        ",
     },
@@ -133,7 +133,7 @@ const Introduce = (props) => {
   };
   return (
     <>
-      <DefaultLayout>
+      <DefaultLayout showBreakcrumb="true" breakcrumb={props.breakcrumb}>
         <section className="lpg-s-banner-introduce">
           <div className="lpg-container">
             <div className="lpg-b-center">
@@ -201,6 +201,25 @@ const Introduce = (props) => {
             </div>
           </div>
         </section>
+        <div className="lpg-b-tabs-introduce">
+          <div className="lpg-container">
+            <h1>Hệ Sinh Thái</h1>
+            <nav>
+              <ul>
+                <li>
+                  <button>E-system</button>
+                </li>
+                <li>
+                  <button>E-cosmetic</button>
+                </li>
+                <li>
+                  <button>QUỸ AN SINH XÃ HỘI </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <section className="lpg-s-ecomestic"></section>
         <Information
           onCloseModal={onCloseModal}
           open={open}
@@ -220,6 +239,7 @@ export async function getServerSideProps() {
       breakcrumb: {
         title: "Giới Thiệu",
         link: "/introduce",
+        titleLink: "Giới Thiệu",
       },
     },
   };

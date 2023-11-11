@@ -56,7 +56,7 @@
 }
 * body header.lpg-hdr .lpg-container .lpg-b-logo a img.lpg-font-logo {
   width: 170px;
-  height: 26px;
+  height: 22px;
 }
 * body header.lpg-hdr .lpg-container .lpg-b-logo a .lpg-span-name {
   font-weight: 700;
@@ -656,13 +656,42 @@
 * body footer.lpg-footer .lpg-container .lpg-info-4 .lpg-form .lpg-form-group button:hover {
   transform: translateY(-5%);
 }
+* body .lpg-b-tabs-introduce {
+  margin-bottom: 60px;
+}
+* body .lpg-b-tabs-introduce .lpg-container h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+* body .lpg-b-tabs-introduce .lpg-container nav {
+  text-align: center;
+  display: block;
+}
+* body .lpg-b-tabs-introduce .lpg-container nav ul li {
+  width: 20%;
+  display: inline-block;
+  border-right: 1px solid #111;
+}
+* body .lpg-b-tabs-introduce .lpg-container nav ul li:last-child {
+  border: none;
+}
+* body .lpg-b-tabs-introduce .lpg-container nav ul li button {
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
 * body .lpg-s-banner-introduce {
   width: 100%;
-  height: 700px;
+  height: 790px;
   background: url("../public/world-map.png");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  margin-bottom: 60px;
 }
 * body .lpg-s-banner-introduce .lpg-container {
   position: relative;
@@ -951,56 +980,35 @@
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-* body .lpg-s-shop .lpg-container {
+* body .lpg-s-shop {
+  margin-bottom: 90px;
+}
+* body .lpg-s-shop .lpg-container .lpg-b-header {
+  margin-bottom: 30px;
+}
+* body .lpg-s-shop .lpg-container .lpg-b-header h2 {
+  font-size: 16px;
+}
+* body .lpg-s-shop .lpg-container .lpg-b-body {
   display: flex;
   justify-content: space-between;
-}
-* body .lpg-s-shop .lpg-container aside {
-  width: 16%;
-}
-* body .lpg-s-shop .lpg-container aside .lpg-b-aside-title {
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #ddd;
-}
-* body .lpg-s-shop .lpg-container aside .lpg-b-aside-title:last-child {
-  border: none;
-}
-* body .lpg-s-shop .lpg-container aside .lpg-b-aside-title h2 {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-* body .lpg-s-shop .lpg-container aside .lpg-b-aside-title button {
-  width: 100%;
-  text-align: left;
-  margin-bottom: 10px;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-* body .lpg-s-shop .lpg-container aside .lpg-b-aside-title button:hover {
-  color: #e2cf59;
-}
-* body .lpg-s-shop .lpg-container article {
-  width: 80%;
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: space-between;
 }
-* body .lpg-s-shop .lpg-container article .lpg-b-prod {
-  width: 310px;
-  height: 380px;
+* body .lpg-s-shop .lpg-container .lpg-b-body .lpg-b-prod {
+  width: 370px;
+  height: 360px;
   position: relative;
 }
-* body .lpg-s-shop .lpg-container article .lpg-b-prod .lpg-b-img {
+* body .lpg-s-shop .lpg-container .lpg-b-body .lpg-b-prod .lpg-b-img {
   width: 100%;
-  height: 230px;
+  height: 280px;
   position: relative;
   margin-bottom: 20px;
   z-index: 2;
 }
-* body .lpg-s-shop .lpg-container article .lpg-b-prod .lpg-b-img a img {
+* body .lpg-s-shop .lpg-container .lpg-b-body .lpg-b-prod .lpg-b-img a img {
   position: absolute;
   top: 0;
   left: 0;
@@ -1010,27 +1018,12 @@
      object-fit: cover;
   z-index: -1;
 }
-* body .lpg-s-shop .lpg-container article .lpg-b-prod .lpg-b-img nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-* body .lpg-s-shop .lpg-container article .lpg-b-prod .lpg-b-content .lpg-title-name {
+* body .lpg-s-shop .lpg-container .lpg-b-body .lpg-b-prod .lpg-b-content .lpg-title-name {
   font-size: 16px;
   font-weight: 600;
   text-align: center;
   display: block;
   margin-bottom: 4px;
-}
-* body .lpg-s-shop .lpg-container article .lpg-b-prod .lpg-b-content .lpg-title-price {
-  color: #666;
-  font-size: 18px;
-  text-align: center;
-  font-weight: 600;
-  display: block;
-  text-align: center;
 }
 
 @keyframes customEnterModalAnimation {
