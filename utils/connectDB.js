@@ -1,8 +1,15 @@
-import mysql from "mysql2";
-// create the connection to database
-const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  database: "db_lpg",
-});
-export default connection;
+import mongoose from "mongoose";
+
+const connectDB = () => {
+  if (mongoose.connections[0].readyState) {
+    console.log("Already connected.");
+    return;
+  }
+  mongoose.connect(process.env.MONGODB_URL, (err) => {
+    if (err) throw err;
+    console.log("Connected to mongodb.");
+  });
+};
+mongoose.set("strictQuery", false);
+
+export default connectDB;

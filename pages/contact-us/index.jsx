@@ -1,5 +1,4 @@
 import { DefaultLayout } from "../../layouts";
-import { Form, Field } from "react-final-form";
 import { useState } from "react";
 const ContactUs = (props) => {
   const onSubmit = () => {};
@@ -58,7 +57,7 @@ const ContactUs = (props) => {
               <div className="lpg-b-left">
                 <h2>Hãy viết thư cho chúng tôi!</h2>
                 <div className="lpg-form-send-mail">
-                  <Form
+                  {/* <Form
                     onSubmit={onSubmit}
                     initialValues={{ firstname: "", lastname: "", title: "" }}
                     render={({ handleSubmit, form, values }) => (
@@ -107,7 +106,7 @@ const ContactUs = (props) => {
                         </div>
                       </form>
                     )}
-                  />
+                  /> */}
                 </div>
               </div>
               <div className="lpg-b-right">
