@@ -93,6 +93,7 @@ export async function getServerSideProps() {
       breakcrumb: {
         title: "Đăng Nhập",
         link: "/login",
+        titleLink: "Đăng nhập",
       },
     },
   };

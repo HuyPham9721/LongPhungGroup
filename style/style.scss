@@ -956,6 +956,69 @@
         }
       }
     }
+    .lpg-s-esystem {
+      display: none;
+      &.active {
+        display: block;
+      }
+      .lpg-container {
+        .lpg-b-Images {
+          width: 100%;
+          height: 900px;
+          position: relative;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    .lpg-s-asxh {
+      display: none;
+      &.active {
+        display: block;
+      }
+      .lpg-container {
+        .lpg-b-Images {
+          width: 100%;
+          height: 900px;
+          position: relative;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    .lpg-s-ecosmetic {
+      display: none;
+      &.active {
+        display: block;
+      }
+      .lpg-container {
+        .lpg-b-Images {
+          width: 100%;
+          height: 900px;
+          position: relative;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
     .lpg-s-contact-us {
       margin-bottom: 80px;
       .lpg-container {

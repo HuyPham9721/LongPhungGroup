@@ -218,6 +218,7 @@ export async function getServerSideProps() {
       breakcrumb: {
         title: "Tin Tức",
         link: "/news",
+        titleLink: "Tin Tức",
       },
     },
   };

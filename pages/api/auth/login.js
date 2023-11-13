@@ -22,7 +22,6 @@ const login = async (req, res) => {
   try {
     const { IDVNL, passWord } = req.body;
     const user = await Users.findOne({ IDVNL });
-
     if (!user) return res.status(400).json({ err: "this user dose not exist" });
     const isMatch = await bcrypt.compare(passWord, user.passWord);
     if (!isMatch) return res.status(400).json({ err: "incorrect password." });

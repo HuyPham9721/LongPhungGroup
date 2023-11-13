@@ -12,10 +12,8 @@ const ContactUs = (props) => {
                 <i className="fa-regular fa-timer"></i>
                 <div className="lpg-b-if4">
                   <span>
-                    <h2>Mở Cửa</h2>
+                    <h2>Luôn Mở Cửa</h2>
                   </span>
-                  <span>Sáng : 7:30 – 11:30 </span>
-                  <span>Chiều : 13:30 – 18:00</span>
                 </div>
               </div>
               <div className="lpg-b-info-item">
@@ -107,6 +105,29 @@ const ContactUs = (props) => {
                       </form>
                     )}
                   /> */}
+                  <form action="">
+                    <div className="lpg-form-group-1">
+                      <input type="text" placeholder="Họ" />
+                      <input type="text" placeholder="Tên" />
+                    </div>
+                    <div className="lpg-form-group">
+                      <input type="text" placeholder="tiêu đề" />
+                    </div>
+                    <div className="lpg-form-group">
+                      <textarea
+                        placeholder="Nội Dung"
+                        name=""
+                        id=""
+                        cols="30"
+                        rows="10"
+                      ></textarea>
+                    </div>
+                    <div className="buttons lpg-form-group">
+                      <button type="submit" className="lpg-btn-submit">
+                        Gửi
+                      </button>
+                    </div>
+                  </form>
                 </div>
               </div>
               <div className="lpg-b-right">
@@ -147,6 +168,7 @@ export async function getServerSideProps() {
       breakcrumb: {
         title: "Liên Hệ",
         link: "/contact-us",
+        titleLink: "Liên Hệ",
       },
     },
   };

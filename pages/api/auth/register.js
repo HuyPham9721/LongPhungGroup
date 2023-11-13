@@ -34,7 +34,7 @@ const register = async (req, res) => {
       phoneNumber,
       email,
     });
-    await newUser.create;
+    await newUser.save();
     res.json({ msg: "Register success" });
   } catch (err) {
     res.status(500).json({ err: err.message });

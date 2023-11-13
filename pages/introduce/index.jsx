@@ -131,6 +131,24 @@ const Introduce = (props) => {
     setOpen(false);
     $(".lpg-b-hst").removeClass("clicked");
   };
+  const handleOpenSS = (e) => {
+    let a = $(".lpg-s-esystem");
+    let b = $(".lpg-s-ecosmetic");
+    let c = $(".lpg-s-asxh");
+    if (e.target.value === "1") {
+      a.addClass("active");
+      b.removeClass("active");
+      c.removeClass("active");
+    } else if (e.target.value === "2") {
+      a.removeClass("active");
+      b.addClass("active");
+      c.removeClass("active");
+    } else if (e.target.value === "3") {
+      a.removeClass("active");
+      b.removeClass("active");
+      c.addClass("active");
+    }
+  };
   return (
     <>
       <DefaultLayout showBreakcrumb="true" breakcrumb={props.breakcrumb}>
@@ -207,19 +225,60 @@ const Introduce = (props) => {
             <nav>
               <ul>
                 <li>
-                  <button>E-system</button>
+                  <button
+                    type="button"
+                    value={1}
+                    onClick={(e) => handleOpenSS(e)}
+                  >
+                    E-system
+                  </button>
                 </li>
                 <li>
-                  <button>E-cosmetic</button>
+                  <button
+                    type="button"
+                    value={2}
+                    onClick={(e) => handleOpenSS(e)}
+                  >
+                    E-cosmetic
+                  </button>
                 </li>
                 <li>
-                  <button>QUỸ AN SINH XÃ HỘI </button>
+                  <button
+                    type="button"
+                    value={3}
+                    onClick={(e) => handleOpenSS(e)}
+                  >
+                    QUỸ AN SINH XÃ HỘI{" "}
+                  </button>
                 </li>
               </ul>
             </nav>
           </div>
         </div>
-        <section className="lpg-s-ecomestic"></section>
+        <section className="lpg-s-esystem active">
+          <div className="lpg-container">
+            <div className="lpg-b-Images">
+              <Image src="/Picture2.png" alt="" width={1920} height={1080} />
+            </div>
+            <div className="lpg-b-Images">
+              <Image src="/Picture3.png" alt="" width={1920} height={1080} />
+            </div>
+          </div>
+        </section>
+        <section className="lpg-s-ecosmetic">
+          <div className="lpg-container">
+            <div className="lpg-b-Images">
+              <Image src="/Picture6.jpg" alt="" width={1920} height={1080} />
+            </div>
+          </div>
+        </section>
+        <section className="lpg-s-asxh">
+          <div className="lpg-container">
+            <div className="lpg-b-Images">
+              <Image src="/Picture5.png" alt="" width={1920} height={1080} />
+            </div>
+          </div>
+        </section>
         <Information
           onCloseModal={onCloseModal}
           open={open}

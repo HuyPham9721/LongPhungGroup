@@ -128,6 +128,7 @@ export async function getStaticProps() {
       breakcrumb: {
         title: "Đăng Ký",
         link: "/register",
+        titleLink: "Đăng Ký",
       },
     },
   };
