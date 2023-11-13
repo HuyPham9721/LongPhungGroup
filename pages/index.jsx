@@ -5,6 +5,13 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [open, setOpen] = useState(false);
+  const handleOpen = (e) => {
+    setOpen(true);
+  };
+  const onCloseModal = () => {
+    setOpen(false);
+  };
   const settings = {
     dots: false,
     infinite: true,
@@ -20,6 +27,32 @@ export default function Home() {
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          // dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   const calculateTimeLeft = () => {
     let year = new Date().getFullYear();

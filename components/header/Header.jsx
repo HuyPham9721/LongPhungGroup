@@ -65,6 +65,11 @@ const Header = () => {
               </li>
             </ul>
           </nav>
+          <div className="lpg-b-hide">
+            <button className="lpg-btn-hide">
+              <i className="fa-solid fa-bars"></i>
+            </button>
+          </div>
         </div>
       </header>
     </>
