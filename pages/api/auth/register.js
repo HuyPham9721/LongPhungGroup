@@ -1,7 +1,7 @@
 import connectDB from "../../../utils/connectDB";
 import Users from "../../../models/userModels";
 import bcrypt from "bcrypt";
-
+import valid from "../../../utils/validForm";
 connectDB();
 
 export default async function handle(req, res) {
@@ -34,7 +34,7 @@ const register = async (req, res) => {
       phoneNumber,
       email,
     });
-    await newUser.save();
+    await newUser.create;
     res.json({ msg: "Register success" });
   } catch (err) {
     res.status(500).json({ err: err.message });
