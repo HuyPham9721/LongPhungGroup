@@ -48,7 +48,7 @@ export default function Home() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
@@ -194,6 +194,20 @@ export default function Home() {
               <div className="lpg-b-item">
                 <div className="lpg-b-img">
                   <Image
+                    src="/DHL.jpg"
+                    width={300}
+                    height={300}
+                    alt="Picture of the author"
+                  />
+                </div>
+                <div className="lpg-b-content">
+                  <h1>RUBY</h1>
+                  <Link href="">Đỗ Hữu Lộc</Link>
+                </div>
+              </div>
+              <div className="lpg-b-item">
+                <div className="lpg-b-img">
+                  <Image
                     src="/founder.jpg"
                     width={300}
                     height={300}
@@ -208,7 +222,7 @@ export default function Home() {
               <div className="lpg-b-item">
                 <div className="lpg-b-img">
                   <Image
-                    src="/founder.jpg"
+                    src="/co-founder.jpg"
                     width={300}
                     height={300}
                     alt="Picture of the author"
@@ -222,21 +236,49 @@ export default function Home() {
               <div className="lpg-b-item">
                 <div className="lpg-b-img">
                   <Image
-                    src="/founder.jpg"
+                    src="/PDD1.jpg"
                     width={300}
                     height={300}
                     alt="Picture of the author"
                   />
                 </div>
                 <div className="lpg-b-content">
-                  <h1>Diamond</h1>
-                  <Link href="">Nguyễn Thị Ngọc Thủy</Link>
+                  <h1>EMERALD</h1>
+                  <Link href="">Phạm Đông Đức</Link>
                 </div>
               </div>
               <div className="lpg-b-item">
                 <div className="lpg-b-img">
                   <Image
-                    src="/founder.jpg"
+                    src="/TTAK.jpg"
+                    width={300}
+                    height={300}
+                    alt="Picture of the author"
+                  />
+                </div>
+                <div className="lpg-b-content">
+                  <h1>RUBY</h1>
+                  <Link href="">Trần Thị Ánh Kim</Link>
+                </div>
+              </div>{" "}
+              <div className="lpg-b-item">
+                <div className="lpg-b-img">
+                  <Image
+                    src="/TKN.jpg"
+                    width={300}
+                    height={300}
+                    alt="Picture of the author"
+                  />
+                </div>
+                <div className="lpg-b-content">
+                  <h1>RUBY</h1>
+                  <Link href="">Trần Kim Ngân</Link>
+                </div>
+              </div>{" "}
+              <div className="lpg-b-item">
+                <div className="lpg-b-img">
+                  <Image
+                    src="/TMT.jpg"
                     width={300}
                     height={300}
                     alt="Picture of the author"
@@ -244,21 +286,105 @@ export default function Home() {
                 </div>
                 <div className="lpg-b-content">
                   <h1>Diamond</h1>
-                  <Link href="">Nguyễn Thị Ngọc Thủy</Link>
+                  <Link href="">Trần Minh Trâm</Link>
+                </div>
+              </div>{" "}
+              <div className="lpg-b-item">
+                <div className="lpg-b-img">
+                  <Image
+                    src="/txt.jpg"
+                    width={300}
+                    height={300}
+                    alt="Picture of the author"
+                  />
+                </div>
+                <div className="lpg-b-content">
+                  <h1>Ruby</h1>
+                  <Link href="">Phạm Thị Thanh Thủy</Link>
+                </div>
+              </div>{" "}
+              <div className="lpg-b-item">
+                <div className="lpg-b-img">
+                  <Image
+                    src="/txt.jpg"
+                    width={300}
+                    height={300}
+                    alt="Picture of the author"
+                  />
+                </div>
+                <div className="lpg-b-content">
+                  <h1>Ruby</h1>
+                  <Link href="">Bùi Thu Thảo</Link>
+                </div>
+              </div>{" "}
+              <div className="lpg-b-item">
+                <div className="lpg-b-img">
+                  <Image
+                    src="/txt.jpg"
+                    width={300}
+                    height={300}
+                    alt="Picture of the author"
+                  />
+                </div>
+                <div className="lpg-b-content">
+                  <h1>Ruby</h1>
+                  <Link href="">Hồ Thị Ngọc</Link>
+                </div>
+              </div>{" "}
+              <div className="lpg-b-item">
+                <div className="lpg-b-img">
+                  <Image
+                    src="/txt.jpg"
+                    width={300}
+                    height={300}
+                    alt="Picture of the author"
+                  />
+                </div>
+                <div className="lpg-b-content">
+                  <h1>Ruby</h1>
+                  <Link href="">Nguyễn Ngọc Quế</Link>
+                </div>
+              </div>{" "}
+              <div className="lpg-b-item">
+                <div className="lpg-b-img">
+                  <Image
+                    src="/txt.jpg"
+                    width={300}
+                    height={300}
+                    alt="Picture of the author"
+                  />
+                </div>
+                <div className="lpg-b-content">
+                  <h1>Ruby</h1>
+                  <Link href="">Nguyễn Thị Thanh Hằng</Link>
                 </div>
               </div>
               <div className="lpg-b-item">
                 <div className="lpg-b-img">
                   <Image
-                    src="/founder.jpg"
+                    src="/txt.jpg"
                     width={300}
                     height={300}
                     alt="Picture of the author"
                   />
                 </div>
                 <div className="lpg-b-content">
-                  <h1>Diamond</h1>
-                  <Link href="">Nguyễn Thị Ngọc Thủy</Link>
+                  <h1>Ruby</h1>
+                  <Link href="">Trần Thị Màu</Link>
+                </div>
+              </div>{" "}
+              <div className="lpg-b-item">
+                <div className="lpg-b-img">
+                  <Image
+                    src="/txt.jpg"
+                    width={300}
+                    height={300}
+                    alt="Picture of the author"
+                  />
+                </div>
+                <div className="lpg-b-content">
+                  <h1>Ruby</h1>
+                  <Link href="">Đinh Thị Kim Ngân</Link>
                 </div>
               </div>
             </Slider>

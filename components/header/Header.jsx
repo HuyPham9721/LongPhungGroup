@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import $ from "jquery";
 import { useEffect } from "react";
 const Header = () => {
   useEffect(() => {
@@ -66,7 +67,13 @@ const Header = () => {
             </ul>
           </nav>
           <div className="lpg-b-hide">
-            <button className="lpg-btn-hide">
+            <button
+              className="lpg-btn-hide"
+              onClick={() => {
+                $(".lpg-modal-menu").addClass("active");
+                $(".lpg-modal-tabs").addClass("active");
+              }}
+            >
               <i className="fa-solid fa-bars"></i>
             </button>
           </div>

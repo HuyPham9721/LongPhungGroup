@@ -1,4 +1,4 @@
-import { Header, Footer, Breakcrumb } from "../../components";
+import { Header, Footer, Breakcrumb, ModalHeader } from "../../components";
 const DefaultLayout = ({
   children,
   breakcrumb = {},
@@ -10,6 +10,7 @@ const DefaultLayout = ({
       {showBreakcrumb && <Breakcrumb breakcrumb={breakcrumb}></Breakcrumb>}
       {children}
       <Footer></Footer>
+      <ModalHeader></ModalHeader>
     </>
   );
 };
